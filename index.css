@@ -1,26 +1,91 @@
-body{
-  background-color: white;
+.dark-mode {
+  background-color: black;
+  color: white;
 }
-.polaroid {
-    
-   background-color: rgb(229, 240, 240);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-   
-    margin-top: 80px;
-    margin-right: 160px;
-    margin-left: 60px;
-    float: right;
-    font-family: cursive;
-    text-align: center;
-    padding-left: 10px;
-    font-size: 30px;
-    
-    
-   
-    
+
+.carousel-caption{
+  color: whitesmoke;
+  
+}
+
+  .bt-spl{
+    color: rgb(233, 84, 96);
   }
+.para{
+
  
-  #rcorners4 {
+  width: 60%;
+  height:60%;
+  margin-top: 80px;
+  margin-left: 120px;
+  margin-right: 200px;
+  
+ 
+
+}
+
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+  
+
+ #rcorners4 {
     border-radius: 5px;
     background-color: rgb(152, 236, 67);
     padding: 10px; 
@@ -30,11 +95,7 @@ body{
     color: black;
   } 
 
-  .imageroate{
-    -ms-transform: rotate(10deg); /* IE 9 */
-    transform: rotate(5deg);
-  }
-  }
+  
   h2{
     padding-top: 40px;
   }
@@ -105,7 +166,11 @@ body{
     input[type=submit]:hover {
       background-color: #45a049;
     }
-    
+    .bmc-button{
+      background-color: Transparent;
+      border: none;             /* Your can add different style/properties of button Here*/
+cursor:pointer; 
+    }
    
     
     .col-25 {
@@ -163,6 +228,8 @@ body{
       
 
   }
+
+  
   
   .sidebar-social li {
       text-align: center;
@@ -207,3 +274,27 @@ body{
   .sidebar-social a i.fa-500px:hover { color:#00ABE3 }
   
   .sidebar-social a i.fa-adn:hover { color:#FF57AE }
+
+
+
+  ::-webkit-scrollbar-track {
+    background-color: white;
+    box-shadow: inset 1px 1px 5px grey;
+    border-radius: 50px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    width: 10px !important;
+    background: #6985c4;
+    border-radius: 50px;
+    border: 2px solid black;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #545454;
+  }
+  .btn{
+    color: white;
+  }
