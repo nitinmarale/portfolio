@@ -131,24 +131,7 @@
     padding-top: 40px;
   }
 
-  .box-container{
-    display:inline-block;
-    width:450px;
-    padding-top: 25px;
-    }
-  .box{
-    display:block;
-    padding-top: 10px;
-    
-    height: 50px;
   
-    background:rgb(199, 188, 188);
-    color:#fff;
-    margin-left:0.3%;
-    text-align:center;
-    color: black;
-    border-radius: 15px;
-    }
 
     .btn{
       background-color: transparent;
@@ -206,7 +189,7 @@
     }
     .bmc-button{
       background-color: Transparent;
-      border: none;             /* Your can add different style/properties of button Here*/
+      border: none;   /* Your can add different style/properties of button Here*/
 cursor:pointer; 
     }
    
@@ -228,6 +211,29 @@ cursor:pointer;
       content: "";
       display: table;
       clear: both;
+    }
+
+    .box{
+      background-color: rgb(174, 179, 179);
+      
+      border-radius: 6px;
+      
+      min-width: 400px;
+      margin: 20px 20px 20px 20px;
+      margin-bottom: 20px;
+      min-height: 40px;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .flex2{
+     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-items: center;
+ 
+    
     }
     
     /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
@@ -336,3 +342,37 @@ cursor:pointer;
   .btn{
     color: white;
   }
+
+  .project-box{
+    background-color: blue;
+  }
+
+  .flex{
+    display: flex;
+  
+    flex-wrap: wrap;
+    flex-direction: row;
+   justify-content: space-around;
+
+  }
+
+  .card{
+    min-height: 200px;
+  }
+  .card-title , .card-text{
+    color: black;
+
+  }
+  a.icon-twitter{
+    color:#4800f1;
+  }    /* Change to desired color */
+  a.icon-facebook{
+    color:#3B5998;
+  }    /* Change to desired color */
+  a.icon-google{
+    color:#C20806;
+  }    /* Change to desired color */
+
+
+ 
+    
